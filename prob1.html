@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        input[type="number"] {
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px;
+            font-size: 15px;
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter Second number">
+
+    <br>
+
+    <button onclick="Add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="div()">Divide</button>
+    <button onclick="mult()">Multiply</button>   
+</body>
+</html>
+<script>
+    let firstnum  = document.getElementById("num1");
+    let secnum  = document.getElementById("num2");
+    // let tag1  = document.getElementById("tag");
+    // let tag2  = document.getElementById("tag2");
+    // console.log()
+    // let sum = 0;
+
+    
+    function Add()
+    {
+        let Add = Number(firstnum.value) + Number(secnum.value);
+        alert(Add);
+        
+    }        
+    function sub()
+    {
+        let Sub = Number(firstnum.value) - Number(secnum.value);
+        alert(Sub);
+        
+    }
+    function mult()
+    {
+        let Mult = Number(firstnum.value) * Number(secnum.value);
+        alert(Mult);
+        
+    }
+    function div()
+    {
+        let Div = Number(firstnum.value) / Number(secnum.value);
+        alert(Div);
+        
+    }
+</script>
